@@ -1,8 +1,6 @@
 name: Keep caches fresh
 run-name: "Keep caches fresh ${{ inputs.leg || github.event_name }} ${{ inputs.racecar_run }}"
 on:
-  schedule:
-  - cron: "5 4 1/4 * *"       # every 4 days
   workflow_dispatch:
     inputs:
       leg:
